@@ -31,13 +31,14 @@ Button,
 input {
   background-color: rgb(215, 226, 153);
   font-size: 20px;
-  border-radius: 20px;
+  border-radius: 25px;
   color: black;
   padding: 12px 10px;
-  text-align: center;
+  text-align: left;
   text-decoration: none;
   margin: 4px 10px;
   cursor: pointer;
+  border: 2px solid #333;
 }
 
 Button:hover {
@@ -46,7 +47,7 @@ Button:hover {
 
 section {
   background-color: rgb(185, 185, 174);
-  border-radius: 20px;
+  border-radius: 25px;
   padding: 5px;
   font-weight: bold;
   border-style: groove;
@@ -75,4 +76,12 @@ h1 {
   padding: 2px;
   border-radius: 25px;
   border: 3px solid #333;
+}
+
+.SubmitButton {
+  background-color: rgb(185, 185, 174);
+  font-size: 14px;
+  font-weight: bold;
+  border: 3px solid #333;
+  border-radius: 25px;
 }

@@ -34,6 +34,7 @@ const ContactForm = ({ onAddContact }) => {
         <h4>Name:</h4>
         <input
           type="text"
+          placeholder="Add name....."
           name="name"
           pattern="^[a-zA-Z]+(([' \-][a-zA-Z ])?[a-zA-Z]*)*$"
           title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
@@ -47,6 +48,7 @@ const ContactForm = ({ onAddContact }) => {
         <h4>Phone number:</h4>
         <input
           type="tel"
+          placeholder="Add number....."
           name="number"
           pattern="\+?\d{1,4}[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
           title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
@@ -56,7 +58,9 @@ const ContactForm = ({ onAddContact }) => {
         />
       </label>
       <br />
-      <button type="submit">Adaugă contact</button>
+      <button className="SubmitButton" type="submit">
+        Add contact
+      </button>
     </form>
   );
 };
